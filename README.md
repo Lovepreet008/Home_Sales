@@ -32,7 +32,7 @@ Create a temporary table called home_sales using the Spark DataFrame.
 
 - Average Price of a Home by Year with Specific Criteria:
     - What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet? Round off your answer to two decimal places.
-    
+
     ![Alt text](image-3.png)
 
 - View Rating for Homes Over $350,000:
@@ -44,6 +44,8 @@ Create a temporary table called home_sales using the Spark DataFrame.
     - Using the cached data, run the query that filters out the view ratings with an average price of greater than or equal to $350,000. Determine the runtime and compare it to the uncached runtime.
 - Parquet Data Processing:
     - Partition by the "date_built" field on the formatted parquet home sales data.
+        - NOTE: A seperate folder named home_sales_partitioned is created that contain all the partitioned files. 
+
     - Create a temporary table for the parquet data.
 - Parquet Query:
     - Run the query that filters out the view ratings with an average price of greater than or equal to $350,000 using the parquet data. Determine the runtime and compare it to uncached runtime.
